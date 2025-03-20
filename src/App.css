@@ -67,19 +67,24 @@
   }
   
   .skill-graph-container {
-    margin-left: 220px;  /* Adjust according to sidebar width */
-    width: calc(100% - 220px);  /* Take remaining screen space */
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: "90vh",  // Use 90% of viewport height
+            width: "calc(100% - 500px)",  // Adjust width considering sidebar width
+            marginLeft: "320px",  // Shift graph right to account for sidebar
+            marginTop: "10px",  // Add small spacing from navbar
+            marginRight: "100px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
 }
 
 .cy-container {
-  width: 80%;
-  height: 80vh;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*align-items: center;
+  justify-content: center;*/
+  position: relative;  /*  Ensures Cytoscape does not get forced into a corner */
+  overflow: hidden;  /*  Avoids layout shifts */
 }
 
 

@@ -41,16 +41,7 @@ const SkillGraph = () => {
     }, [elements]);  // Runs when elements update
 
     return (
-        <div style={{ 
-            height: "90vh",  // Use 90% of viewport height
-            width: "calc(100% - 500px)",  // Adjust width considering sidebar width
-            marginLeft: "320px",  // Shift graph right to account for sidebar
-            marginTop: "10px",  // Add small spacing from navbar
-            marginRight: "100px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
-         }}>
+        <div className="skill-graph-container">
             <CytoscapeComponent 
                 cy={(cy) => { cyRef.current = cy; }}  // Store Cytoscape instance
                 elements={elements}
