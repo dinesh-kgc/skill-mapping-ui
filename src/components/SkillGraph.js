@@ -24,6 +24,7 @@ const SkillGraph = () => {
 return (
     <div className="skill-graph-container">
         <h1>Skill Graph</h1>
+        {skills.length === 0 ? <p>Loading skills...</p> : null}  {/* ✅ Show loading state */}
         <CytoscapeComponent
             elements={skills.map((skill, index) => ({
                 data: { id: `skill-${index}`, label: skill }
@@ -34,12 +35,7 @@ return (
   );
 };
 
-<CytoscapeComponent
-    elements={skills.map((skill, index) => ({
-        data: { id: `skill-${index}`, label: skill }
-    }))}
-    style={{ width: '80%', height: '80vh', border: '1px solid #ccc', background: '#f9f9f9' }}  // ✅ Ensure proper size
-/>
+
 
 
 export default SkillGraph;
