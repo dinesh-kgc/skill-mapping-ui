@@ -57,12 +57,12 @@ const SkillGraph = () => {
                 style={{  width: "100%", height: "100%", border: "1px solid #ccc", background: "#f9f9f9"  }}
                 layout={{
                     name: "cose",  // Organic layout for spreading out nodes
-                    fit: true,  // Ensures all nodes fit in the viewport
-                    padding: 30,  // Adds padding to prevent edge clipping
-                    nodeRepulsion: 4000,  // Higher value pushes nodes apart
-                    idealEdgeLength: 200,  // Increases spacing between connected nodes
-                    edgeElasticity: 0.2,  // Keeps edges flexible
-                    gravity: 0.5  // Ensures better centering
+                    fit: false,  // Ensures all nodes fit in the viewport
+                    padding: 50,  // Adds padding to prevent edge clipping
+                    nodeRepulsion: 5000,  // Higher value pushes nodes apart
+                    idealEdgeLength: 120,  // Increases spacing between connected nodes
+                    edgeElasticity: 0.3,  // Keeps edges flexible
+                    gravity: 0.2  // Ensures better centering
                 }}
                 stylesheet={[
                     {
