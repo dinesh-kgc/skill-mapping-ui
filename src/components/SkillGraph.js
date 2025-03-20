@@ -6,7 +6,7 @@ const SkillGraph = () => {
   const [elements, setElements] = useState([]);
 
   useEffect(() => {
-    axios.get("https://your-flask-api.onrender.com/get_skills") // Fetch from Flask API
+    axios.get("https://flask-auradb-api.onrender.com/get_skills") // Fetch from Flask API
       .then((response) => {
         const nodes = response.data.skills.map((skill, index) => ({
           data: { id: `s${index}`, label: skill }, // Create nodes from API data
