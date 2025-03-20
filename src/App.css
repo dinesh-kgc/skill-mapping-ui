@@ -1,12 +1,25 @@
 /* Sidebar Styling */
 .sidebar {
-    width: 250px;
+    width: 200px;  /* Reduce from 300px */
     height: 100vh;
-    background-color: #2c3e50;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2C3E50;
     color: white;
     padding: 20px;
-    position: fixed;
   }
+
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+  background-color: #34495E;
+}
   
   .sidebar h2 {
     margin: 0 0 20px;
@@ -53,3 +66,20 @@
     color: #666;
   }
   
+  .skill-graph-container {
+    margin-left: 220px;  /* Adjust according to sidebar width */
+    width: calc(100% - 220px);  /* Take remaining screen space */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cy-container {
+  width: 80%;
+  height: 80vh;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+
