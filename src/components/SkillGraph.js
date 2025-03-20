@@ -6,7 +6,7 @@ const SkillGraph = () => {
     const [skills, setSkills] = useState([]); // ✅ Ensure state is initialized
 
     useEffect(() => {
-        axios.get('https://your-flask-api.onrender.com/get_skills')
+        axios.get('https://flask-auradb-api.onrender.com/get_skills')
             .then(response => {
                 console.log("Fetched skills:", response.data.skills);  // ✅ Verify API response
                 setSkills(response.data.skills);
