@@ -67,14 +67,16 @@
   }
   
   .skill-graph-container {
-    height: "90vh",  // Use 90% of viewport height
-            width: "calc(100% - 500px)",  // Adjust width considering sidebar width
-            marginLeft: "320px",  // Shift graph right to account for sidebar
-            marginTop: "10px",  // Add small spacing from navbar
-            marginRight: "100px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
+    width: calc(100% - 420px);  /* ✅ Ensure space for sidebar */
+    height: 90vh;  /* ✅ Increased height to 90% of viewport */
+    margin-left: 320px;  
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* ✅ Prevents unwanted resizing */
+    overflow: hidden;  /* ✅ Ensures content stays inside */
 }
 
 .cy-container {
