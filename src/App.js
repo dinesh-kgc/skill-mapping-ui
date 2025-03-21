@@ -14,6 +14,7 @@ const App = () => (
         <Route path="/" element={<Dashboard />} />
         <Route path="/skill-graph" element={<SkillGraph />} />
         <Route path="/job-details" element={<JobRoleDetails />} />
+        <Route path="/job-role/:jobRoleName" element={<JobRoleDetails />} />
       </Routes>
     </div>
   </Router>
